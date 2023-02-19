@@ -7,44 +7,80 @@
     <meta= name="description" content="Curiculum Vitae de Leonardo Francisco Chicco, programador junior. Manejo de lenguaje html, java script, css, git, github. Tambien ofrece servicios de Community Manager">
     <meta= name="author" content="Cristian Sandoval">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Curriculum</title>
 </head>
 <body>
     <header>
-        <nav> 
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="formacion.html">Formación</a></li>
-                <li><a href="experiencia.html">Experiencia</a></li>
-            </ul>
-        </nav>
+        <div>
+            <nav> 
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="experiencia.html">Experiencia</a></li>
+                    <li><a href="formacion.html">Formación</a></li>
+                </ul>
+            </nav>
+            </div>
     </header>
-    <article>
-        <section>
-            <img src="CristianS.jpg" alt="Una foto retrato de Cristian Sandova" heigt="400px" width="400px"><br>
-            <b>Nombre:</b>Cristian Sandoval<br>
-            <b>Domicilio:</b>Calle Larga N° 7692<br>
-            <b>Ciudad:</b>Viedma - Río Negro - Argentina<br>            
-        </section>
-        <section>
-            <h1><b>Experiencia:</b></h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>A deleniti sint ducimus ullam itaque commodi architecto harum, excepturi error enim eum quaerat nulla rem, sed asperiores accusantium, <br>repellat veritatis eius.
-            </p>
-        </section>
-    </article>
-    <aside>
-        <h3><b>Canales de contacto</b></h3>
-        <P>
-            E-mail: <E-mail>contacteme@contacto.com</E-mail><br>
-            Teléfono: +54 9 2920988703
-    </aside>
-    <footer>      
-    <h3><b>Redes Sociales</b></h3>
-          <a href="https://www.facebook.com" target="_blank">Facebook</a>
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-          <a href="https://www.twitter.com" target="_blank">Twitter</a>
-     <h5>© Copyrigth - Todos los derechos reserados</h5>
-    </footer>
+    <section>
+         <div class="fila1">
+             <div class="datos">
+                 <article>          
+                     <b>Nombre: </b>Cristian Sandoval<br>
+                     <b>Domicilio: </b>Calle Larga N° 7692<br>
+                      <b>Ciudad: </b>Viedma - Río Negro - Argentina<br>            
+                 </article>
+             </div>
+             <div>
+                  <article>
+                      <img src="CristianS.jpg" alt="Una foto retrato de Cristian Sandoval" heigt="400px" width="400px"><br>
+                  </article>
+             </div>
+         </div>
+         <article class="cuerpo1">
+            <h1 class="titulo"><b>Experiencia:</b></h1>
+                 <div class="tabla1">
+                     <table>
+                        <thead> 
+                             <tr>
+                                 <th><b>Empresa</b></th>
+                                 <th><b>Periodo</b></th>
+                                 <th><b>Tareas</b></th>
+                                 <th><b>Logros</b></th>
+                             </tr>
+                        </thead>
+                         <tr>
+                             <td>Desarrollador web eCommerce <br> Response, Zaragoza</td>
+                             <td>Junio de 2017<br>Marzo de 2020</td>
+                             <td>Maquetación mediante CSS. <br>Optimización de SEO on page.<br>Programación con JavaScript.<br>Diseño, desarrollo e implementación de interfaces de BBDD.</td>
+                             <td>Incremento en un 30% de media en el tráfico de nuestros clientes.<br>Nominación en los premios Sodeint por mejor diseño web.</td>
+                         </tr>
+                         <tr>
+                             <td>Desarrollador SharePoint<br>X25 Informática, Madrid</td>
+                             <td>Enero de 2015<br>Mayo de 2016</td>
+                             <td>Elaboración de requisitos funcionales y documentos de especificaciones técnicas.<br>Desarrollo de aplicaciones web basadas en tecnologías de Sharepoint Framework.<br>Creación de componentes para transferir datos seguros entre webs y sistemas internos.<br>Elaboración de diseños gráficos con Adobe Photoshop e Illustrator.</td>
+                             <td>Diseño de soluciones SharePoint e Intranets corporativas para más de 10 empresas en expansión.</td>
+                         </tr>
+                     </table>
+                 </div>
+         </article>
+     </section>
+     <footer>
+        <div class="footer">
+            <div>
+                <h5>© 2023<br>Todos los derechos reserados</h5>
+            </div>
+            <div>
+                <h3><b>Redes Sociales</b></h3>
+               <a href="https://www.facebook.com" target="_blank">Facebook</a>
+               <a href="https://www.instagram.com" target="_blank">Instagram</a>
+               <a href="https://www.twitter.com" target="_blank">Twitter</a>
+               <a href="https://www.linkedin.com" target="_blank">Linkedin</a>
+            </div>
+       </div>
+   </footer>
 </body>
 </html>
