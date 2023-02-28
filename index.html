@@ -2,71 +2,79 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords"content="programación, curriculums, formacion, java sript, html, css">
-    <meta= name="description" content="Curiculum Vitae de Leonardo Francisco Chicco, programador junior. Manejo de lenguaje html, java script, css, git, github. Tambien ofrece servicios de Community Manager">
-    <meta= name="author" content="Cristian Sandoval">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>Curriculum</title>
+    <script src="https://kit.fontawesome.com/6ec993b39a.js" crossorigin="anonymous"></script>
+    <script defer src="js/eventos.js"></script>
+    <link rel="shortcut icon" href="cv.png" type="image/x-icon">
+    <meta name="keywords"content="programación, curriculums, formacion, java sript, html, css">
+    <meta= name="description" content="Curiculum Vitae de Leonardo Francisco Chicco, programador junior. Manejo de lenguaje html, java script, css, git, github. Tambien ofrece servicios de Community Manager">
+    <meta= name="author" content="Cristian Sandoval">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
-        <nav> 
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="experiencia.html">Experiencia</a></li>
-                <li><a href="formacion.html">Formación</a></li>
-            </ul>
+            <img src="cv.png" alt="se debe mostrar una imagen con las letras C  V">
+        </div>
+        <nav class="menu ">
+            <ul class="menu_items">
+                <li class="li"><a href="index.html">INICIO</a></li>
+                <li class="li"><a href="formacion.html">FORMACION</a></li>
+                <li class="li"><a href="experiencia.html">EXPERIENCIA</a></li>
+            </ul>   
         </nav>
-        </div>
+        <button class="button">
+            <i class="fa-solid fa-bars" id="svg"></i>
+        </button>
     </header>
-    <section>
-         <div class="fila1">
-                 <div class="datos">
-                     <article>          
-                         <b>Nombre: </b>Cristian Sandoval<br>
-                         <b>Domicilio: </b>Calle Larga N° 7692<br>
-                          <b>Ciudad: </b>Viedma - Río Negro - Argentina<br>            
-                     </article>
-                 </div>
-                 <div>
-                     <article>
-                         <img src="CristianS.jpg" alt="Una foto retrato de Cristian Sandoval" heigt="400px" width="400px"><br>
-                     </article>
-                </div>
-         </div>
-         <div class="fila2">
-             <div class="perfil">
-                 <article>
-                     <h1><b>Perfil Profesional:</b></h1><br>
-                         <p>
-                         Programador web con más de 5 años de trayectoria desarrolladas en el eCommerce. A lo largo de estos años, he tenido el privilegio de formar parte en la creación de webs como geekletics.es y peternappi.es, las cuales han cultivado un gran éxito, tanto en tráfico como en conversiones. Busco llevar mi capacidad creativa al siguiente nivel, aportando mis amplios conocimientos en CSS y Prestashop.
-                         </p>
-                 </article>
-             </div>
-         </div>
+    <section class="conteiner">
+        <article class="primero">
+            <h1>Leonardo Francisco Chicco</h1><br><br>
+            <p> <b>Domicilio:</b> Calle Larga N° 7692<br>
+                contacteme@contacto.com<br>
+                +54 9 2920988703<br>
+                <b>Ubicación</b> Patagonia – Argentina
+                </p>
+        </article>
+        <article class="segundo">
+            <h2></h2>
+            <img class="imagen" src="FranciscoC.jpg" alt="Una imagen retrato de Leonardo Francisco Chicco">
+        </article>
+        <article class="tercero">
+            <h2>PERFIL PROFESIONAL:</h2><br><br>
+            <p>Programador web con más de 5 años de trayectoria desarrolladas en el eCommerce. A lo largo de estos años, he tenido el privilegio de formar parte en la creación de webs como geekletics.es y peternappi.es, las cuales han cultivado un gran éxito, tanto en tráfico como en conversiones. Busco llevar mi capacidad creativa al siguiente nivel, aportando mis amplios conocimientos en CSS y Prestashop.</p>
+        </article>
+        <aside class="aside">
+            <h3>Formulario de contacto</h3><br><br>
+            <article>
+                <form> <inputut action="" method="get" />
+                    <label><b>Nombre</b></label>
+                    <input type="text" name="nombre" placeholder="ingrese su nombre" class="campo"/>
+                    <label><b>Apellido</b></label>
+                    <input type="text" name="apellido" placeholder="ingrese su apellido" class="campo"/>
+                    <label><b>E-mail</b></label>
+                    <input type="email" name="email" placeholder="ingrese su e-mail" class="campo"/>
+                    <label><b>Mensaje</b></label>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje" > </textarea>
+                    <input type="submit" name="enviar" value="Enviar mensaje" class="btn-enviar"/>
+                </form>
+            </article>
+        </aside>    
     </section>
-     <aside>
-         <h3><b>Canales de contacto</b></h3><br>
-         <P>E-mail: contacteme@contacto.com <br><br>Teléfono: +54 9 2920988703</P>
-     </aside>
-    <footer>
-         <div class="footer">
-             <div>
-                 <h5><b>© 2023</b><br>Todos los derechos reserados</h5>
-             </div>
-             <div>
-                 <h3><b>Redes Sociales</b></h3>
-                <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                <a href="https://www.twitter.com" target="_blank">Twitter</a>
-                <a href="https://www.linkedin.com" target="_blank">Linkedin</a>
-             </div>
-        </div>
-    </footer>
+    <footer class="footer">
+        <article class="izquierdo">
+            <h5>© 2023<br>Todos los derechos reserados</h5>
+        </article>
+        <article class="derecho">
+            <h4><b>Redes Sociales</b></h4>
+               <a href="https://www.facebook.com" target="_blank">Facebook</a>
+               <a href="https://www.instagram.com" target="_blank">Instagram</a>
+               <a href="https://www.twitter.com" target="_blank">Twitter</a>
+               <a href="https://www.linkedin.com" target="_blank">Linkedin</a>
+        </article>
+    </footer>    
 </body>
 </html>

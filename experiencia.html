@@ -1,49 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords"content="programación, curriculums, formacion, java sript, html, css">
-    <meta= name="description" content="Curiculum Vitae de Leonardo Francisco Chicco, programador junior. Manejo de lenguaje html, java script, css, git, github. Tambien ofrece servicios de Community Manager">
-    <meta= name="author" content="Cristian Sandoval">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>Curriculum</title>
+    <script src="https://kit.fontawesome.com/6ec993b39a.js" crossorigin="anonymous"></script>
+    <script defer src="js/eventos.js"></script>
+    <link rel="shortcut icon" href="cv.png" type="image/x-icon">
+    <meta name="keywords"content="programación, curriculums, formacion, java sript, html, css">
+    <meta= name="description" content="Curiculum Vitae de Leonardo Francisco Chicco, programador junior. Manejo de lenguaje html, java script, css, git, github. Tambien ofrece servicios de Community Manager">
+    <meta= name="author" content="Cristian Sandoval">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
-            <nav> 
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="experiencia.html">Experiencia</a></li>
-                    <li><a href="formacion.html">Formación</a></li>
-                </ul>
-            </nav>
-            </div>
+            <img src="cv.png" alt="se debe mostrar una imagen con las letras C  V">
+        </div>
+        <nav class="menu ">
+            <ul class="menu_items">
+                <li class="li"><a href="index.html">INICIO</a></li>
+                <li class="li"><a href="formacion.html">FORMACION</a></li>
+                <li class="li"><a href="experiencia.html">EXPERIENCIA</a></li>
+            </ul>   
+        </nav>
+        <button class="button">
+            <i class="fa-solid fa-bars" id="svg"></i>
+        </button>
     </header>
-    <section>
-         <div class="fila1">
-             <div class="datos">
-                 <article>          
-                     <b>Nombre: </b>Cristian Sandoval<br>
-                     <b>Domicilio: </b>Calle Larga N° 7692<br>
-                      <b>Ciudad: </b>Viedma - Río Negro - Argentina<br>            
-                 </article>
-             </div>
-             <div>
-                  <article>
-                      <img src="CristianS.jpg" alt="Una foto retrato de Cristian Sandoval" heigt="400px" width="400px"><br>
-                  </article>
-             </div>
-         </div>
-         <article class="cuerpo1">
-            <h1 class="titulo"><b>Experiencia:</b></h1>
-                 <div class="tabla1">
-                     <table>
+    <section class="conteiner">
+        <article class="primeroE">
+            <h1><b>Experiencia:</b></h1><br><br>
+            <table class="tabla1">
                         <thead> 
                              <tr>
                                  <th><b>Empresa</b></th>
@@ -65,22 +54,45 @@
                              <td>Diseño de soluciones SharePoint e Intranets corporativas para más de 10 empresas en expansión.</td>
                          </tr>
                      </table>
-                 </div>
-         </article>
-     </section>
-     <footer>
-        <div class="footer">
-            <div>
-                <h5>© 2023<br>Todos los derechos reserados</h5>
-            </div>
-            <div>
-                <h3><b>Redes Sociales</b></h3>
+        </article>
+        <!-- <article class="segundo">
+            <h2>titulo 2</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et asperiores hic dolorum iure sunt, velit illum tenetur unde consequatur voluptatibus numquam itaque provident dignissimos, nisi atque assumenda nobis veniam ratione?
+             Recusandae facere adipisci quidem, eum temporibus accusamus rerum odio fuga, molestiae doloribus a. Dicta, placeat, vero soluta voluptate omnis eaque, asperiores nesciunt provident velit tempore architecto veritatis eius beatae vitae!
+             Quis laudantium dolore reiciendis esse a repudiandae veniam impedit natus. Incidunt illo qui temporibus, libero odit ipsam eligendi ad quos, consectetur sit impedit, omnis modi officia provident molestias exercitationem harum!</p>
+        </article> -->
+        <article class="tercero">
+            <h2><b>Descargue mi curriculum en *PDF</b></h2><br><br>
+             <p> Click <a download="CVchicco" href="Curriculum LFC.pdf"> aquí</a> para descargar.</p>
+        </article>
+        <aside class="aside">
+            <h3>titulo del aside</h3><br>
+            <article>
+                <form> <inputut action="" method="get" />
+                    <label><b>Nombre</b></label>
+                    <input type="text" name="nombre" placeholder="ingrese su nombre" class="campo"/>
+                    <label><b>Apellido</b></label>
+                    <input type="text" name="apellido" placeholder="ingrese su apellido" class="campo"/>
+                    <label><b>E-mail</b></label>
+                    <input type="email" name="email" placeholder="ingrese su e-mail" class="campo"/>
+                    <label><b>Mensaje</b></label>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje" > </textarea>
+                    <input type="submit" name="enviar" value="Enviar mensaje" class="btn-enviar"/>
+                </form>
+            </article>
+        </aside>    
+    </section>
+    <footer class="footer">
+        <article class="izquierdo">
+            <h5>© 2023<br>Todos los derechos reserados</h5>
+        </article>
+        <article class="derecho">
+            <h4><b>Redes Sociales</b></h4>
                <a href="https://www.facebook.com" target="_blank">Facebook</a>
                <a href="https://www.instagram.com" target="_blank">Instagram</a>
                <a href="https://www.twitter.com" target="_blank">Twitter</a>
                <a href="https://www.linkedin.com" target="_blank">Linkedin</a>
-            </div>
-       </div>
-   </footer>
+        </article>
+    </footer>    
 </body>
 </html>

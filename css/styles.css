@@ -1,175 +1,233 @@
-html {
-    font-family: 'Lato', sans-serif;
-    }
-
-*{
-    box-sizing: border-box;
+* {
     padding: 0;
     margin: 0;
-    }
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
 
 body {
-    background-color: rgb(125, 195, 204);
-    position: relative;
-    padding-bottom: 8%;
-    }
+    background-color: aquamarine;
+}
 
 header {
-    background-color: rgb(99, 241, 241);
+    background-color:  rgb(99, 241, 241);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    background-color:  rgb(99, 241, 241);
+}
+
+.conteiner {
+    background-color:  aquamarine;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 28px auto;
+}
+
+.conteiner .primero {
+    background-color: none;
+    grid-column: 1/2;
+    padding: 2em 5em;
+    line-height: 1.5;
+}
+
+.conteiner .primerof {
+    background-color: none;
+    grid-column: 1/3;
+    padding: 1em 5em;
+    line-height: 1.5;
+}
+
+.conteiner .primeroE {
+    background-color: none;
+    grid-column: 1/3;
+    padding: 2em 2em;
+}
+
+.conteiner .segundo {
+    background-color: none;
+    grid-column: 2/3;
+    padding: 20px;
+}
+
+.conteiner .tercero {
+    background-color: none;
+    grid-column: 1/3;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.conteiner .tercero p {
+    text-align: center;
+}
+
+.aside {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: none;
+    text-align: center;
+    padding: 20px;
+    min-height: 100px;
     }
 
 .footer {
     background-color: rgb(99, 241, 241);
-    }
-
-header {
-    padding: 50px, 60px;
-    display: table;
-    width: 100%;
-    }
-
-nav {
-    float: right;
-    margin-right: 20%;
-    }
-
-nav ul li {
-    list-style: none;
-    float: left;
-    padding: 25px 10px;
-    }
-
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    }
-
-nav ul li a:hover {
-    transition: text-shadow 0.2s ease-in;
-    text-shadow: 0 0.3mm rgba(0, 0, 0, 2);
-    border-bottom: solid gray 5px;
-    }
-
- .fila1 {
     display: grid;
-    grid-template-columns: 66.5% 33.5%;
-    }
-
- .fila1 .datos {
-    align-content: center;
-    justify-content: center;
-    margin-left: 20%;
-    text-align: justify;
-    padding: 10%;
-    font-size: 20px;
-    font-stretch: ultra-expanded;
-    }
-
-img {
-    border-radius: 50%;
-    width: 250px;
-    height: 200px;
-    }
-
-.fila2 {
-    display: grid;
-    grid-template-columns: 66.5% 33.5%;
-    gap: 25px;
-    }
-
-.fila2 .perfil {
-    font-size: 20px;
-    text-align: justify;
-    padding: 0% 5% 3% 5%;
-    }
-
-
-aside {
-    width: 30%;
-    box-sizing: content-box;
-    border: 1px solid black;
-    flex: content;
+    grid-template-columns: 1fr, 1fr;
+}
+    
+.footer {
+    height: auto;
+    margin-top: auto;
+    padding: 5px;   
 }
 
-aside {
-    margin-left: 70%;
-    margin-top: -200px;
-    margin-bottom:2%;
+.izquierdo {
+    grid-column: 1/2;
+    background-color: none;
+    padding: 5px;
+    margin: 5px;
 }
 
-aside {
-    width: 300px;
-    height: 300px;
+.izquierdo h5 {
+    text-align: center;
+}
+    
+.derecho {
+    grid-column: 2/3;
+    background-color: none;
     text-align: center;
     padding: 5px;
-
+    margin: 5px;
 }
 
-.footer {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    position: absolute;
-    padding: 10px;
-    margin-top: 20px;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-    }
-
-.footer div a {
+.derecho a {
     text-decoration: none;
-    }
-  
+    color: black;
+    margin: .5em;
+}
+
+.menu {
+    background-color: rgb(99, 241, 241);
+    height: 75px;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-right: 8em;
+    align-items: center;
+}
+   
+#svg {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(99, 241, 241);
+    display: none;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    margin-left: 4em;
+}
+    
+.menu_items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    list-style: none;
+}
+    
+.menu_items li {
+    margin: 0 15px;
+}
+    
+.menu_items li a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(69, 218, 218);
+    border-radius: 12%;
+}
+    
+.menu_items li a:hover {
+    transition: text-shadow 0.2s ease-in;
+    text-shadow: 0 0.3mm rgba(255, 255, 255, 2);
+    border-bottom: solid rgb(199, 243, 243) 5px;
+}
+    
+.imagen {
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+}
+
 h1 {
     text-align: center;
-    }
+}
 
-.titulo {
-    margin-right: 35%;
-    }
+p {
+    text-align: justify;
+}
 
-.escuelas {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-left: 35px;
-    padding: 5%;
+h2 {
     text-align: center;
-    }
+}
 
 .tabla1 {
-    width: 100%;
+    max-width: 850px;
     padding-top: 15px;
     border-collapse: collapse;
-    }
+}
+
+.tabla1 thead tr {
+    background-color: rgb(129, 202, 178);
+    padding: 15px;
+    text-align: center;
+}
 
 .tabla1 table thead th {
     background-color: rgb(129, 202, 178);
     padding: 15px;
     text-align: center;
-    }
+}
 
 .tabla1 table td {
     border-collapse: collapse;
     padding: 20px;
     text-align: justify;
-    }
+}
 
-.tabla1 table tr:hover {
+.tabla1 tr:hover {
     background-color: rgb(133, 196, 175);
-    }
+    cursor: pointer;
+}
 
 .tabla2 {
-    width: 100%;
+    max-width: 850px;
     padding-top: 45px;
     border-collapse: collapse;
-    }
+}
 
 .tabla2 thead tr {
     background-color: rgb(129, 202, 178);
     padding: 15px;
     text-align: center;
-    }
+}
 
 .tabla2 thead th {
     padding: 15px;
@@ -183,4 +241,147 @@ h1 {
 
 .tabla2 td:hover {
     background-color: rgb(133, 196, 175);
+    cursor: pointer;
+}
+
+.campo, textarea {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 12px;
+    border: 1px solid rgb(99, 241, 241);
+    border-radius: 3px;
+    margin-bottom: 15px;
+    outline: 0;
+}
+
+textarea {
+    max-width: 850px;
+    min-height: 180px;
+}
+
+form label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.btn-enviar {
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    outline: 0;
+    background: rgb(99, 241, 241);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btn-enviar:hover {
+    background: rgb(69, 218, 218)
+}
+
+@media only screen and (max-width: 850px) {
+   
+    #svg {
+        display: block;
+        cursor: pointer;
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 0;
+    }
+
+    .header {
+        display: flex;
+        max-width: 850px;
+        min-width: 340px;
+        flex-wrap: nowrap;
+    }
+
+    .header .menu {
+        max-width: 850px;;
+        /**height: 1em;*/
+        height: auto;
+        transition: all 1s ease;
+    }
+
+    header .menu_items {
+        margin-top: -90px;       
+    }
+    
+    .header .menu_items.activo {
+        margin-top: 0em;
+        flex-direction: column;
+        height: auto;
+        margin-left: 5em;    
+	}
+
+	.header .li {
+        margin-top: 2em;
+		margin: 1rem 0;
+        border-bottom:1px solid rgba(255,255,255, .3);
+	}
+    
+    img {
+        width: 60px;
+        height: 60px;
+        display: block;
+        align-content:flex-start;
+        padding: 5px;
+        margin-left: 1em;
+    }
+	
+    .conteiner {
+        grid-column: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .conteiner .primero {
+        grid-column: 1/2;
+        width: 100%;
+        height: auto;
+    }
+
+    .conteiner .primerof {
+        background-color: none;
+        grid-column: 1/3;
+        padding: 0;
+        line-height: 1.5;
+    }
+    
+    .conteiner .primeroE {
+        background-color: none;
+        grid-column: 1/3;
+        padding: 0;
+    }
+
+    .conteiner .segundo {
+        grid-column: 1/2;
+        width: 100vw;
+        height: auto;
+    }
+
+    .conteiner .tercero {
+        grid-column: 1/2;
+        width: 100vw;
+        height: auto;
+    }
+
+    .aside {
+        grid-column: 1/2;
+        grid-row: 4;
+        width: 100vw;
+        height: auto;
+    }
+
+    .footer {
+        height: auto;
+        width: 100%;
+    }
+
+    .footer .izquierdo,
+    .footer .derecho {
+        grid-column: 1/2;
+        width: 100vw;
+    }
 }
